@@ -21,15 +21,19 @@ def play_game():
     # Determine the winner
     if user_choice not in choices:
         print("Please choose a valid option and try again or exit the game.")
+        print("\n")
         play_game()
     elif user_choice == computer_choice:
         print("It's a tie!")
+        print("\n")
         play_game()
     elif (user_choice == "rock" and computer_choice == "scissors") or (user_choice == "paper" and computer_choice == "rock") or (user_choice == "scissors" and computer_choice == "paper"):
         print("You win!")
+        print("\n")
         play_game()
     else:
         print("You lose!")
+        print("\n")
         play_game()
 
 
