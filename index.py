@@ -11,11 +11,11 @@ user_choice = input("Enter your choice: ")
 # Computer's choice
 choices = ["rock", "paper", "scissors"]
 computer_choice = random.choice(choices)
-print("Computer chose:", computer_choice)
-
 if user_choice.lower() == "quit":
     print("Quitting the game...")
     exit()
+else:
+    print("Computer chose:", computer_choice)
 
 
 # Determine the winner
